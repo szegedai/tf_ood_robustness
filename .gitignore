@@ -1,3 +1,8 @@
+saved_models_wrn_cyclic/
+.idea
+data
+*.csv
+*.eps
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
