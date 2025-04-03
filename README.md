@@ -4,7 +4,7 @@ Towards more robust transcription factor binding site classifiers using out-of-d
 ## Environment setup
 ```
 conda create -n tfood python=3.11.9
-conda install pytorch==2.3.0 torchvision==0.18.0 torchaudio==2.3.0 pytorch-cuda=11.8 -c pytorch -c nvidia
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 conda install pandas==2.2.1
 conda install tqdm==4.66.4
 pip install tensorboard==2.16.2
