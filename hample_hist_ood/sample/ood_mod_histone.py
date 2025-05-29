@@ -32,6 +32,6 @@ def random_uniform(tfactor: str, ml_set="Test.csv"):
     histone = pd.read_csv("./sample/"+tfactor + "/HM_101/" + ml_set, header=None, index_col=None)
     fill_values = np.random.normal(7.5,15, size=histone.values.shape)
     # fill_values = np.random.rand(*histone.values.shape)
-    np.savetxt("./sample/"+tfactor + "/HM_101/" + ml_set, fill_values, delimiter=",", fmt="%10.3f")
+    np.savetxt("./sample/"+tfactor + "_mod/HM_101/" + ml_set, fill_values, delimiter=",", fmt="%10.3f")
     print("Done converting the following TFs: ", tfactor+" "+ml_set, "with modification: ", random_uniform.__name__)
 
