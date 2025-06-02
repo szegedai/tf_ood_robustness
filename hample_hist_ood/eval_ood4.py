@@ -35,7 +35,7 @@ def eval_ood(mod_type, date_time, model_name, TFs):
         if mod_type == "sub_rnd":
             histone_substitute(tfactor=tfactor, )
         elif mod_type == "random_uniform":
-            random_uniform(tf=tfactor)
+            random_uniform(tfactor=tfactor)
 
         model = Hample()
 
@@ -67,19 +67,6 @@ def eval_ood(mod_type, date_time, model_name, TFs):
 
         print('---Finish Inference on out-of-distribution examples!---\n', datetime.now())
         # predicted_values_arr = np.array(predicted_values)
-
-        # batch size 1
-        # predicted_values = []
-        # ground_labels = []
-        # TestLoader = loader.DataLoader(dataset=SSDataset_690(TF_mod, 3, True), batch_size=1, shuffle=False, num_workers=0)
-        # for sequence, shape, epigenome, labels in TestLoader:
-        #     binding_predictions = model(sequence.float(), shape.float(), epigenome.float())
-        #     labels = labels.permute(1, 0)
-        #     for prediction, label in zip(binding_predictions, labels):
-        #         predicted_values.append(prediction.squeeze(dim=0).squeeze(dim=0).detach().numpy())
-        #         ground_labels.append(label.squeeze(dim=0).detach().numpy())
-        # cells_ground_labels_id_orig = np.array(ground_labels).reshape(int(len(ground_labels) / 5), 5)
-        # cells_predicted_values_id_orig = np.array(predicted_values).reshape(int(len(ground_labels) / 5), 5)
 
         cells_predicted_values = predicted_values_arr
         # cells_predicted_values = np.array(predicted_values_arr).reshape(int(len(predicted_values_arr)), 5)
