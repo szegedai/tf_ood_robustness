@@ -80,7 +80,8 @@ def eval_ood(mod_type, date_time, model_name, TFs):
         print('---Finished and Saved Predictions!---\t', datetime.now(), datetime.now() - startTime)
 
         auroc_out = calc_rocs(tfactor, mod_type, model_name=model_name, date_time=date_time)
-        os.system("echo " + str(auroc_out) + " >> " + date_time + mod_type + ".txt")
+        os.system("echo " + str(auroc_out) + " >> ./" + "/".join(
+            ["outmodels", tfactor, model_name.split("_")[0], date_time, mod_type]) + "/" + date_time + mod_type + ".txt")
 
 if __name__ == "__main__":
    mod_type = sys.argv[1]
