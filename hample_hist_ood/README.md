@@ -1,6 +1,7 @@
 Package Versions:
 - torch 2.2.2
 - NumPy 1.26.4
+- scikit-learn 1.4.1.post1
 
 This code base relies on [HAMPLE](https://github.com/ZhangLab312/Hample/tree/main).
 
