@@ -17,3 +17,5 @@ The `train_hist_ood.py` produces models with out-of-distribution (OOD) histone m
 Running `eval_ood4.py` creates the models' predictions for the various (robustness) evaluation scenarios: $D_{in}$, $D_{\mathbb{N}}$, $D_{sub}$.
 `scripts.calc_auroc.py` calculates the Area Under the Receiver Operating Characteristic Curve (AuROC) scores.
 
+### Notes
+Make sure to check the `readme` files in the subfolders to avoid any complications.
