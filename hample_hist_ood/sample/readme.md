@@ -31,3 +31,5 @@ sample/
 ├── readme.md
 └── script.py
 ```
+
+Please make sure to use the `script.py` from this repository (and avoid overwriting with the file having the same name from the downloaded archive, so only paste the TF data folders).
